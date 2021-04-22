@@ -1,0 +1,11 @@
+.jumbotron {
+  margin: 0;
+}
+
+footer.jumbotron {
+  padding: 20px;
+}
+
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Procurar";
+}/*# sourceMappingURL=style.css.map */

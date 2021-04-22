@@ -5,77 +5,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
     <title>Atividade</title>
 </head>
 
 <body>
-    <header>
-        <h1>HTML5, CSS3, JS</h1>
-    </header>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">HTML5, CSS3, JS</h1>
+        </div>
+    </div>
 
-    <nav>
-        <a href="#">Inicial</a>
-        <a href="pages/formulario.html">Formulário</a>
-        <a href="pages/contato.html">Contato</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">News</a>
+        <button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicial<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/formulario.html">Formulário</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <main>
-        <article>
-            <header>
-                <h1>THE WITCHER: BLOOD ORIGIN ESCALA LAURENCE O’FUARAIN, DE GAME OF THRONES, COMO PROTAGONISTA</h1>
-            </header>
+        <div class="container-fluid p-3 my-1 bg-dark text-white">
+            <div class="row">
+                <div class="col-lg-4">
+                    <article>
+                        <header>
+                            <h3>THE WITCHER: BLOOD ORIGIN ESCALA LAURENCE O’FUARAIN, DE GAME OF THRONES, COMO
+                                PROTAGONISTA
+                            </h3>
+                        </header>
 
-            <h4>27/03/2021 - cristiano_rantin@gmail.com</h4>
-            <img src="img/Artigo1.jpeg" width="900" height="500">
-            <p>The Witcher: Blood Origin, a série que contará eventos anteriores ao que vemos em The Witcher, acaba de
-                ganhar um novo ator no elenco. Segundo o Deadline, Laurence O’Fuarain, de Vikings e Game of Thrones,
-                entrou para o elenco da série como protagonista.</p>
-            <p>O’Fuarain será Fjall, nascido de um clã guerreiro que jurou proteger o Rei, ele carrega uma grande
-                cicatriz emocional por ter perdido um ente querido durante uma batalha. Por causa disso, ele não
-                consegue encontrar paz, seguindo em uma jornada de redenção, ele vai lutar ao lado de aliados
-                improváveis enquanto leva sua vingança por todo o continente.</p>
+                        <h6>
+                            <small class="font-weight-bolder">27/03/2021</small>
+                            <small class="float-right">cristiano_rantin@gmail.com</small>
+                        </h6>
 
-            <p><a href="https://www.legiaodosherois.com.br/2021/the-witcher-blood-laurence-ofuarain-protagonista.html" target="_blank">Referência</a></p>
-        </article>
+                        <img src="img/Artigo1.jpeg" class="img-fluid">
 
-        <article>
-            <header>
-                <h1>LIGA DA JUSTIÇA: ZACK SNYDER REVELA A PARTE MAIS DIFÍCIL DE GRAVAR NOVA CENA DO KNIGHTMARE</h1>
-            </header>
+                        <p>The Witcher: Blood Origin, a série que contará eventos anteriores ao que vemos em The
+                            Witcher,
+                            acaba
+                            de
+                            ganhar um novo ator no elenco. Segundo o Deadline, Laurence O’Fuarain, de Vikings e Game of
+                            Thrones,
+                            entrou para o elenco da série como protagonista.</p>
+                        <p>O’Fuarain será Fjall, nascido de um clã guerreiro que jurou proteger o Rei, ele carrega uma
+                            grande
+                            cicatriz emocional por ter perdido um ente querido durante uma batalha. Por causa disso, ele
+                            não
+                            consegue encontrar paz, seguindo em uma jornada de redenção, ele vai lutar ao lado de
+                            aliados
+                            improváveis enquanto leva sua vingança por todo o continente.</p>
+                        <footer>
+                            <p><a class="btn btn-secondary btn-sm"
+                                    href="https://www.legiaodosherois.com.br/2021/the-witcher-blood-laurence-ofuarain-protagonista.html"
+                                    target="_blank">Referência</a></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article>
+                        <header>
+                            <h3>LIGA DA JUSTIÇA: ZACK SNYDER REVELA A PARTE MAIS DIFÍCIL DE GRAVAR NOVA CENA DO
+                                KNIGHTMARE
+                            </h3>
+                        </header>
 
-            <h4>27/03/2021 - batiman@gmail.com</h4>
-            <img src="img/Artigo2.jpeg" width="900" height="500">
-            <p>A sequência do futuro Knightmare possui muito mais destaque e importante na Liga da Justiça de Zack
-                Snyder. Para o diretor, uma sequência do filme mostraria Darkseid invadindo a Terra e destruindo tudo ao
-                conseguir a Equação Anti-Vida. É por isso que o Flash é enviado a passado, para tentar salvar Lois Lane.
-                Durante Liga da Justiça tivemos várias cenas no futuro no qual o Darkseid invade a Terra, com algumas
-                dessas cenas tendo sido gravadas mais recentemente.</p>
+                        <h6>
+                            <small class="font-weight-bolder">27/03/2021</small>
+                            <small class="float-right">batiman@gmail.com</small>
+                        </h6>
 
-            <p><a href="https://www.legiaodosherois.com.br/2021/liga-da-justica-zack-snyder-cena-knightmare-dificil.html" target="_blank">Referência</a></p>
-        </article>
+                        <img src="img/Artigo2.jpeg" class="img-fluid">
+                        <p>A sequência do futuro Knightmare possui muito mais destaque e importante na Liga da Justiça
+                            de
+                            Zack
+                            Snyder. Para o diretor, uma sequência do filme mostraria Darkseid invadindo a Terra e
+                            destruindo
+                            tudo ao
+                            conseguir a Equação Anti-Vida. É por isso que o Flash é enviado a passado, para tentar
+                            salvar
+                            Lois
+                            Lane.
+                            Durante Liga da Justiça tivemos várias cenas no futuro no qual o Darkseid invade a Terra,
+                            com
+                            algumas
+                            dessas cenas tendo sido gravadas mais recentemente.</p>
+                        <footer>
+                            <p><a class="btn btn-secondary btn-sm"
+                                    href="https://www.legiaodosherois.com.br/2021/liga-da-justica-zack-snyder-cena-knightmare-dificil.html"
+                                    target="_blank">Referência</a></p>
+                        </footer>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <article>
+                        <header>
+                            <h3>“Muito caos”: saiba como será retorno de Lucifer na Netflix</h3>
+                        </header>
 
-        <article>
-            <header>
-                <h1>“Muito caos”: saiba como será retorno de Lucifer na Netflix</h1>
-            </header>
+                        <h6>
+                            <small class="font-weight-bolder">27/03/2021</small>
+                            <small class="float-right">luci@gmail.com</small>
+                        </h6>
 
-            <h4>27/03/2021 - luci@gmail.com</h4>
-            <img src="img/Artigo3.jpeg" width="900" height="500">
-            <p>Quando Deus (Dennis Haysbert) vier, muito caos vem junto”, disse o ator ao TV Line, adiantando também o
-                que esperar desta segunda parte da 5ª temporada. Começamos literalmente dois segundos de onde paramos, e
-                Amenadiel está absolutamente humilhado porque Deus o viu se comportando daquela maneira com seus irmãos,
-                já que, como o mais velho, ele realmente deveria ser o que dá exemplo – e ele não estava fazendo isso!”,
-                contou Woodside.
+                        <img src="img/Artigo3.jpeg" class="img-fluid">
+                        <p>Quando Deus (Dennis Haysbert) vier, muito caos vem junto”, disse o ator ao TV Line,
+                            adiantando
+                            também
+                            o
+                            que esperar desta segunda parte da 5ª temporada. Começamos literalmente dois segundos de
+                            onde
+                            paramos, e
+                            Amenadiel está absolutamente humilhado porque Deus o viu se comportando daquela maneira com
+                            seus
+                            irmãos,
+                            já que, como o mais velho, ele realmente deveria ser o que dá exemplo – e ele não estava
+                            fazendo
+                            isso!”,
+                            contou Woodside.
 
-                Além de retornar como o anjo Amenadiel, D.B. Woodside também faz sua estreia como diretor em um dos
-                episódios da 5ª temporada de Lucifer.
+                            Além de retornar como o anjo Amenadiel, D.B. Woodside também faz sua estreia como diretor em
+                            um
+                            dos
+                            episódios da 5ª temporada de Lucifer.
 
-                Os novos episódios de Lucifer ainda não tem previsão para chegar na Netflix.</p>
-
-            <p><a href="https://observatoriodocinema.uol.com.br/series-e-tv/2021/03/muito-caos-saiba-como-sera-retorno-de-lucifer-na-netflix" target="_blank">Referência</a></p>
-        </article>
+                            Os novos episódios de Lucifer ainda não tem previsão para chegar na Netflix.</p>
+                        <footer>
+                            <p><a class="btn btn-secondary btn-sm"
+                                    href="https://observatoriodocinema.uol.com.br/series-e-tv/2021/03/muito-caos-saiba-como-sera-retorno-de-lucifer-na-netflix"
+                                    target="_blank">Referência</a></p>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer>Matheus Henrique de Barros Gobo - Desenvolvimento de Aplicações Web e Mobile</footer>
+
+    <footer class="jumbotron jumbotron-fluid">
+        <div class="container"></div>
+        <div>Matheus Henrique de Barros Gobo</div>
+        <strong>Desenvolvimento de Aplicações Web e Mobile</strong>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
